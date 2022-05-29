@@ -27,3 +27,6 @@ save file
 on terminal navigate to htmlapp directory and type 
 
 sudo docker build -t htmlapp:0.1 .
+
+after that 
+docker container run --name htmlapp -p 8080:8080 htmlapp:0.1
