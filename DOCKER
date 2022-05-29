@@ -1,0 +1,23 @@
+create htmlapplication file in home directory
+
+
+create index.html 
+in index.html type <h1> Hello World</h1>
+
+
+
+
+create a file with this text in it and save it as 
+
+	Dockerfile on home/htmlapplication  directory
+
+
+FROM alpine
+RUN apk add --update nodejs nodejs-npm
+RUN npm install -h http-server
+
+COPY ./src
+
+EXPOSE 8080
+
+ENTRYPOINT ["http-server", "-p", "8080"]
