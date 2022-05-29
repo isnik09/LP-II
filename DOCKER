@@ -21,3 +21,9 @@ COPY ./src
 EXPOSE 8080
 
 ENTRYPOINT ["http-server", "-p", "8080"]
+
+
+save file 
+on terminal navigate to htmlapp directory and type 
+
+sudo docker build -t htmlapp:0.1 .
