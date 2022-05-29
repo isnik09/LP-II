@@ -30,3 +30,5 @@ sudo docker build -t htmlapp:0.1 .
 
 after that 
 docker container run --name htmlapp -p 8080:8080 htmlapp:0.1
+
+after that type localhost:8080 in browser
